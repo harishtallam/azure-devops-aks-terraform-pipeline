@@ -94,6 +94,7 @@ stages:
                   allowTelemetryCollection: false
 
       - deployment: DeployQAAKSCluster
+        dependsOn: DeployDevAKSCluster
         displayName: Deploy QA AKS Cluster
         pool: 
           vmImage: 'ubuntu-latest'
